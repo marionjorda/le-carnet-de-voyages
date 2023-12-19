@@ -1,0 +1,15 @@
+<div>
+    <h1>Création d'un voyage</h1>
+    <from action="/api/trips" method="POST">
+        <label for="user_id">Utilisateur</label>
+        <select name="user_id">
+            <% @users.each do |user| %>
+                <option value="<%= user.id %>"><%= user.name %></option>
+            <% end %>
+        </select>
+        <br>
+        <label for="destination">Destination</label>
+        <input name="destination" placeholder="Destination">
+        <br>
+    </form>
+</div>
