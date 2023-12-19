@@ -24,7 +24,7 @@ h1{
     color: #000;
 }
 input, select{
-    width: 10%;
+    width: 125px;
     height: auto;
     margin: 7px 0;
 }

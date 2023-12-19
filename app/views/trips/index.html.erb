@@ -1,0 +1,13 @@
+<div>
+    <h1>Les voyages</h1>
+    <ul>
+        <% if @trips.present? %>
+          <% @trips.each do |trip| %>
+            <li><%= trip.destination %></li>
+          <% end %>
+        <% else %>
+          <li>Aucun voyage disponible</li>
+        <% end %>
+      </ul>
+    <button onclick="window.location.href = '/trips/new';">Ajouter un voyage</button>
+</div>

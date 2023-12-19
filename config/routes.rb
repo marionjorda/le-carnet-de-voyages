@@ -21,5 +21,5 @@ Rails.application.routes.draw do
   get "trips/new" => "trips#new"
   
   # Defines the root path route ("/")
-  root "users#index"
+  root "trips#index"
 end
