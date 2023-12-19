@@ -14,3 +14,17 @@
  *= require_self
  */
  @import "bootstrap";
+ @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+ *{
+    font: 500 14px/1.7rem "Space Grotesk";
+    color: #2c3338;
+}
+h1{
+    font: 500 34px/1.7rem "Krona One";
+    color: #000;
+}
+input, select{
+    width: 10%;
+    height: auto;
+    margin: 7px 0;
+}

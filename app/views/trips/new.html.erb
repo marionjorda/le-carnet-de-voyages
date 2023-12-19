@@ -1,6 +1,6 @@
 <div>
     <h1>Création d'un voyage</h1>
-    <from action="/api/trips" method="POST">
+    <form action="/api/trips" method="POST">
         <label for="user_id">Utilisateur</label>
         <select name="user_id">
             <% @users.each do |user| %>
@@ -11,11 +11,16 @@
         <label for="destination">Destination</label>
         <input name="destination" placeholder="Destination">
         <br>
+        <label for="description">Description</label>
+        <input type="text" name="description" placeholder="Description">
+        <br>
         <label for="date_debut">Date de début du voyage</label>
         <input type="date" name="date_debut" placeholder="Date de début">
         <br>
         <label for="date_fin">Date de fin du voyage</label>
         <input type="date" name="date_fin" placeholder="Date de fin">
+        <br>
+        <input type="submit">
         <br>
     </form>
 </div>
